@@ -41,4 +41,49 @@ Here, we will use masks to identify different object in an image and compare it 
 
 ![Ground-Truth-Mask](https://github.com/akhil-s-kumar/NRSC-Project-Feature-Identification-in-Remote-Sensing-Data-Using-Neural-Network-Model/blob/main/data-set/Tile%201/masks/landsat_img_01.png?raw=true)
 
-I hope, the above image gave some idea :bulb: 
+I hope, the above image gave some idea :bulb: we use differen colors to represent different objects.
+
+## :books: Dataset
+
+Here, I used **Landsat 8** Images `20 meter` above the ground level for all my images. You can freely download these images from this repositry and it's free to use. I used my own location `Thiruvananthapuram` to extract features because it will be easy to verify with **Ground Truth Data** for me. You are free to experiment with your own data but, it takes more time to create mask for each images.
+
+### HEX Colors I used to represent differnt objects in the image
+
+1. **Road** - `#0DC2E6`
+1. **Buildings** - `#044079C`
+1. **Others** - `#9A24FB`
+
+### Dataset file structure
+
+```
+📂data-set
+ ┣ 📂Tile 1
+ ┃ ┣ 📂images
+ ┃ ┃  ┣ 📜landsat_img_01.jpg
+ ┃ ┃  ┣ 📜landsat_img_02.jpg
+ ┃ ┃  ┣ 📜landsat_img_03.jpg
+ ┃ ┃  ┣ 📜landsat_img_04.jpg
+ ┃ ┃  ┗ 📜landsat_img_05.jpg
+ ┃ ┗ 📂masks
+ ┃ ┃  ┣ 📜landsat_img_01.png
+ ┃ ┃  ┣ 📜landsat_img_02.png
+ ┃ ┃  ┣ 📜landsat_img_03.png
+ ┃ ┃  ┣ 📜landsat_img_04.png
+ ┃ ┃  ┗ 📜landsat_img_05.png
+ ┣ 📂Tile 2
+ ┃ ┣ 📂images
+ ┃ ┃  ┣ 📜landsat_img_01.jpg
+ ┃ ┃  ┣ 📜landsat_img_02.jpg
+ ┃ ┃  ┣ 📜landsat_img_03.jpg
+ ┃ ┃  ┣ 📜landsat_img_04.jpg
+ ┃ ┃  ┗ 📜landsat_img_05.jpg
+ ┃ ┗ 📂masks
+ ┃ ┃  ┣ 📜landsat_img_01.png
+ ┃ ┃  ┣ 📜landsat_img_02.png
+ ┃ ┃  ┣ 📜landsat_img_03.png
+ ┃ ┃  ┣ 📜landsat_img_04.png
+ ┃ ┃  ┗ 📜landsat_img_05.png
+ ┗ 📜classes.json
+```
+
+I have taken totally 10 images seperated in two folders as `Tile 1` & `Tile 2` for the experiment of this project, you can use as many as you want because more the no of data more precised will be the prediction.
