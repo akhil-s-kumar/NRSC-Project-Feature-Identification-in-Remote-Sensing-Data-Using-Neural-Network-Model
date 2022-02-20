@@ -11,7 +11,11 @@
         <img src="https://img.shields.io/github/stars/akhil-s-kumar/NRSC-Project-Feature-Identification-in-Remote-Sensing-Data-Using-Neural-Network-Model" /></a>
 </p>
 
-This project is done as my Internship Project at NRSC (ISRO). In this Readme file I will walk you through the complete details of my project in an easiest way as possible.
+<p align="center">
+  <img src="https://raw.githubusercontent.com/akhil-s-kumar/NRSC-Project-Feature-Identification-in-Remote-Sensing-Data-Using-Neural-Network-Model/main/assets/ISRO_Logo.png" alt="ISRO Logo">
+</p>
+
+This project is done as part of my Internship at NRSC (ISRO). In this Readme file I will walk you through the complete details of my project in an easiest way as possible.
 
 ## :question: What is ML Vs DL
 
