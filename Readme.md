@@ -11,58 +11,34 @@
         <img src="https://img.shields.io/github/stars/akhil-s-kumar/NRSC-Project-Feature-Identification-in-Remote-Sensing-Data-Using-Neural-Network-Model" /></a>
 </p>
 
-This project is done as my internship project at NRSC(ISRO)
+This project is done as my Internship Project at NRSC (ISRO). In this Readme file I will walk you through the complete details of my project in an easiest way as possible.
 
-## :minidisc: Installation Instructions
+## :question: What is ML Vs DL
 
-If you want to work with this project or create a version of it make sure to follow the steps below!
+Basically, **Artificial Intelligence** is a broad category of Computer Science that uses machine intelligence to predict the expected output as human does. Now, coming to **Machine Learning**, It is a subset of Artificial Intelligence that uses data and algorithm to perdict an output, and last **Deep Learning**, is a subset of Machine Learning which is more complicated than of Machine Learning to extract certain features using certain layers called **Neural Network** to predict an expected output.
 
-0. Make sure you have installed [Wegan Backend Framework](https://github.com/akhil-s-kumar/Wegan-Framework)
+## :question: What is Semantic Segmentation?
 
-1. Make sure that you have `node` installed already.
+Let's understand this concept with the help of an example. Since, here we are using Remote Sensing Data we can take help with that example.
 
-2. Make sure you are running the backend framework
+![Orginal-Image](https://github.com/akhil-s-kumar/NRSC-Project-Feature-Identification-in-Remote-Sensing-Data-Using-Neural-Network-Model/blob/main/data-set/Tile%201/images/landsat_img_01.jpg?raw=true)
 
-3. open a new terminal
+What all things we can see in the above Image?
 
-4. Switch to your base project directory `Wegan`
+1. **Roads**
+2. **Buildings**
+3. **Land**
+4. **Trees**
+5. **Vehicles**
 
-5. Clone the WebApp repository
-```bash
-    $ git clone https://github.com/akhil-s-kumar/NRSC-Project-Feature-Identification-in-Remote-Sensing-Data-Using-Neural-Network-Web.git
-    $ cd NRSC-Project-Feature-Identification-in-Remote-Sensing-Data-Using-Neural-Network-Web
-```
+If we closely look into the image we can extract a lot more features from the image.
 
-You have now successfully set up the webapp project locally.
+Now, you are just thinking where does this **Semantic Segmentation** comes in the picture right?
 
-## :rocket: How to run  the project?
+In traditional Machine Learning models, If we wanted to predict a single object from an image it's possible by training the model using multiple images of the object that we wanted to predict. Now, what if in the case if we wanted to predict multiple objects in a single image itself here comes Semantic Segmentation in the picture.
 
-Make sure you are inside `NRSC-Project-Feature-Identification-in-Remote-Sensing-Data-Using-Neural-Network-Web` folder
+Here, we will use masks to identify different object in an image and compare it with original image to extract different features of different objects and train the model accoding to that.
 
-1. Install all the dependencies
+![Ground-Truth-Mask](https://github.com/akhil-s-kumar/NRSC-Project-Feature-Identification-in-Remote-Sensing-Data-Using-Neural-Network-Model/blob/main/data-set/Tile%201/masks/landsat_img_01.png?raw=true)
 
-```bash
-    $ npm install
-```
-
-2. Run the WebApp
-
-```bash
-    $ npm start
-```
-
-## :wrench: Tech Stacks
-
-* **Framework:** React JS
-
-## :gem: Contributors
-
-1. [Akhil S Kumar](https://github.com/akhil-s-kumar) - Core Developer and Maintainer
-
-### How to Contribute?
-1. Fork this repository to your GitHub account
-2. Follow the above installation process.
-3. Find an issue or feature, and work on it.
-4. Push your contribution to your forked repo and make a pull request.
-
-#### Note: Change the remote repository to your forked one before pushing.
+I hope, the above image gave some idea :bulb: 
