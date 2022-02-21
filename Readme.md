@@ -54,8 +54,8 @@ Here, I used **Landsat 8** Images `20 meter` above the ground level for all my i
 ### HEX Colors I used to represent differnt objects in the image
 
 1. **Road** - `#0DC2E6`
-1. **Buildings** - `#044079C`
-1. **Others** - `#9A24FB`
+2. **Buildings** - `#044079C`
+3. **Others** - `#9A24FB`
 
 ### Dataset file structure
 
@@ -115,4 +115,14 @@ Now, I used `random` function to plot a random image and its respective mask fro
 It's somewhat look like this!
 
 ![Screenshot-1](https://github.com/akhil-s-kumar/NRSC-Project-Feature-Identification-in-Remote-Sensing-Data-Using-Neural-Network-Model/blob/main/assets/Screenshot_1.jpg?raw=true)
+
+Next, is to covert Hexadecimal colors to RGB channels.
+
+1. **Road** - `#0DC2E6` - `13, 194, 230`
+1. **Buildings** - `#044079C` - `68, 7, 156`
+1. **Others** - `#9A24FB` - `154, 36, 251`
+
+Now, we will convert every pixels into `0, 1 & 2` because we are having only 3 labels that is Roads, Buildings & Others. If more labels are there the number will increase. Then we will use `random` function to plot a random image.
+
+![Screenshot-2](https://github.com/akhil-s-kumar/NRSC-Project-Feature-Identification-in-Remote-Sensing-Data-Using-Neural-Network-Model/blob/main/assets/Screenshot_2.jpg?raw=true)
 
