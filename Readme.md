@@ -91,3 +91,22 @@ Here, I used **Landsat 8** Images `20 meter` above the ground level for all my i
 ```
 
 I have taken totally 10 images seperated in two folders as `Tile 1` & `Tile 2` for the experiment of this project, you can use as many as you want because more the no of data more precised will be the prediction.
+
+## :rocket: Working of trainingModel.py
+
+This file includes every code on how this model works from scratch.
+
+### Necessary Packages
+
+First I imported all necessary packages required for the Model. `cv2`, `os`, `numpy`, `matplotlib`, `Image`, `tensorflow`, `sklearn`, `patchify`, `segmentation_model`, `random`.
+
+Don't i will explain why and where to use these modules.
+
+### CodeBase Walkthrough
+
+First things is loading the `data-set` from the root directory, for that puspose only we are using `os` module.
+
+The next thing is reading each images and their respective masks. Python loads each file in a random way so, in order to make it in a ordered and structured manner we loop through each file in an pre-defined ordered manner. 
+
+In orderd to get maximum features out of an image, we will make use of `patchify` library to split each images and their respective masks in a 256 x 256 (square) images.
+
