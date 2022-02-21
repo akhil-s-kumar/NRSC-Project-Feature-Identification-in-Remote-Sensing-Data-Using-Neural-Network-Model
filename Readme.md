@@ -108,5 +108,11 @@ First things is loading the `data-set` from the root directory, for that puspose
 
 The next thing is reading each images and their respective masks. Python loads each file in a random way so, in order to make it in a ordered and structured manner we loop through each file in an pre-defined ordered manner. 
 
-In orderd to get maximum features out of an image, we will make use of `patchify` library to split each images and their respective masks in a 256 x 256 (square) images.
+In orderd to get maximum features out of an image, we will make use of `patchify` library to split each images and their respective masks in a 256 x 256 (square) images and save it as a numpy array `image_dataset` and `mask_dataset`.
+
+Now, I used `random` function to plot a random image and its respective mask from `image_dataset` and `mask_dataset` to verify orginal image and it's ground truth mask image are same.
+
+It's somewhat look like this!
+
+![Screenshot-1](https://github.com/akhil-s-kumar/NRSC-Project-Feature-Identification-in-Remote-Sensing-Data-Using-Neural-Network-Model/blob/main/assets/Screenshot_1.jpg?raw=true)
 
