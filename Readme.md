@@ -127,3 +127,17 @@ Now, we will convert every pixels into `0, 1 & 2` because we are having only 3 l
 ![Screenshot-2](https://github.com/akhil-s-kumar/NRSC-Project-Feature-Identification-in-Remote-Sensing-Data-Using-Neural-Network-Model/blob/main/assets/Screenshot_2.jpg?raw=true)
 
 The next step is to split the `data-set` into `X_train` `X_test` `y_train` `y_test` to train the model. Here we used `train_test_split` function from `sklearn` library to do so.
+
+The last step is to train the model and validate using `X_test` & `y_test` here I done with only `10 Epochs` so, the predictions may not be that much accurate. If you can do with `100 Epochs` then the predictions will be more accurate.
+
+Once, the training is done the next step is to save the model into `hdf5` format so, that you can use this model wherever you want.
+
+I also included my trained model within this repository with the file name `nrsc_project-model.hdf5`.
+
+Now, we will use a random image to test with the ground truth image to verify the predictions are same.
+
+![Screenshot-3](https://github.com/akhil-s-kumar/NRSC-Project-Feature-Identification-in-Remote-Sensing-Data-Using-Neural-Network-Model/blob/main/assets/Screenshot_3.jpg?raw=true)
+
+So, from the above image it's clear that prediction is almost accurate. Like I said earlier, if you can do it with `100 Epochs` then the predictions will be more precised.
+
+Now, we can use `load_model` from `keras` to load `hdf5` file to predict with new images and no more needed to train the model again and again every time you wanted to test.
