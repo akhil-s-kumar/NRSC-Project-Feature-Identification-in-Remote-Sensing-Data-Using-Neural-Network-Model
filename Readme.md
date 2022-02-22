@@ -169,3 +169,27 @@ Now, the last part is to convert the labelled mask image back to RGB.
 Once it is done we can plot and verify with original image and ground truth mask of original image.
 
 ![Screenshot-5](https://github.com/akhil-s-kumar/NRSC-Project-Feature-Identification-in-Remote-Sensing-Data-Using-Neural-Network-Model/blob/main/assets/Screenshot_5.jpg?raw=true)
+
+If you can do it with `100 Epochs` then the predicted image will be exact like ground thruth image.
+
+## :minidisc: Installation Instructions
+
+You can either do it locally by installing necessary packages or use `Google Collab` because most of the packages used in this project is pre-installed.
+
+Just add these two lines and run it before importing the modules.
+
+```
+!pip install patchify
+!pip install segmentation-models
+```
+
+Also, upload `data-set` folder and `simple_multi_unet_model.py` in the root directory.
+
+You can also try it with your own `data-set` images.
+
+## :globe_with_meridians: References
+
+1. https://medium.com/analytics-vidhya/introduction-to-semantic-image-segmentation-856cda5e5de8
+2. https://www.youtube.com/c/DigitalSreeni
+3. https://earthexplorer.usgs.gov/
+4. https://towardsdatascience.com/u-net-for-semantic-segmentation-on-unbalanced-aerial-imagery-3474fa1d3e56
