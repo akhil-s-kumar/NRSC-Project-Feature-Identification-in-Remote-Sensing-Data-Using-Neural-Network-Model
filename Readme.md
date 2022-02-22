@@ -92,7 +92,7 @@ Here, I used **Landsat 8** Images `20 meter` above the ground level for all my i
 
 I have taken totally 10 images seperated in two folders as `Tile 1` & `Tile 2` for the experiment of this project, you can use as many as you want because more the no of data more precised will be the prediction.
 
-## :rocket: Working of trainingModel.py
+## :rocket: Working with trainingModel.py
 
 This file includes every code on how this model works from scratch.
 
@@ -141,3 +141,5 @@ Now, we will use a random image to test with the ground truth image to verify th
 So, from the above image it's clear that prediction is almost accurate. Like I said earlier, if you can do it with `100 Epochs` then the predictions will be more precised.
 
 Now, we can use `load_model` from `keras` to load `hdf5` file to predict with new images and no more needed to train the model again and again every time you wanted to test.
+
+## :rocket: Working of Model.py
