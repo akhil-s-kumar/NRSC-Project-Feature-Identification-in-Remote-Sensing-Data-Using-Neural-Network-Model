@@ -143,3 +143,29 @@ So, from the above image it's clear that prediction is almost accurate. Like I s
 Now, we can use `load_model` from `keras` to load `hdf5` file to predict with new images and no more needed to train the model again and again every time you wanted to test.
 
 ## :rocket: Working of Model.py
+
+Once your trained model is ready that is `nrsc_project-model.hdf5` in our case, we any more not required `trainingModel.py`. Now every prediction happens on this file `Model.py` that is if you wanted to predict buildings, roads, water bodies or anything that you trained, you just need to have only this file.
+
+### Necessary Packages
+
+Here, I imported all necessary packages required for the prediction. `cv2`, `numpy`, `matplotlib`, `Image`, `sklearn`, `patchify`, `segmentation_model`.
+
+### CodeBase Walkthrough
+
+The first thing is loading the image that we wanted to predict. Here I loaded both original image and it's mask to verify with the predicted image if it is done correctly or not.
+
+Then like we did during the training I splited the original images into 250 X 250 using `patcchify` library.
+
+After that we looped through each splited image and predicted using `load_model` from `keras` and saved in a numpy array.
+
+Since, we splited the original image into small pieces, now, we need to merge back as the original image for the predicted mask. For that we use `unpatchify` from `patchify` library.
+
+If we plot the the predicted image it will somewhat look like this.
+
+![Screenshot-4](https://github.com/akhil-s-kumar/NRSC-Project-Feature-Identification-in-Remote-Sensing-Data-Using-Neural-Network-Model/blob/main/assets/Screenshot_4.jpg?raw=true)
+
+Now, the last part is to convert the labelled mask image back to RGB.
+
+Once it is done we can plot and verify with original image and ground truth mask of original image.
+
+![Screenshot-5](https://github.com/akhil-s-kumar/NRSC-Project-Feature-Identification-in-Remote-Sensing-Data-Using-Neural-Network-Model/blob/main/assets/Screenshot_5.jpg?raw=true)
