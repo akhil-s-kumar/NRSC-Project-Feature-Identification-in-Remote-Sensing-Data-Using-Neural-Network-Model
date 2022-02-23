@@ -100,7 +100,7 @@ This file includes every code on how this model works from scratch.
 
 First I imported all necessary packages required for the Model. `cv2`, `os`, `numpy`, `matplotlib`, `Image`, `tensorflow`, `sklearn`, `patchify`, `segmentation_model`, `random`.
 
-Don't i will explain why and where to use these modules.
+Don't worry I will explain why and where to use these modules.
 
 ### CodeBase Walkthrough
 
@@ -108,7 +108,7 @@ First things is loading the `data-set` from the root directory, for that puspose
 
 The next thing is reading each images and their respective masks. Python loads each file in a random way so, in order to make it in a ordered and structured manner we loop through each file in an pre-defined ordered manner. 
 
-In orderd to get maximum features out of an image, we will make use of `patchify` library to split each images and their respective masks in a 256 x 256 (square) images and save it as a numpy array `image_dataset` and `mask_dataset`.
+In orderd to get maximum features out of an image, we will make use of `patchify` library to split each images and their respective masks in a 256 x 256 (square) images and save it as a numpy array `image_dataset` and `mask_dataset` respectively.
 
 Now, I used `random` function to plot a random image and its respective mask from `image_dataset` and `mask_dataset` to verify orginal image and it's ground truth mask image are same.
 
